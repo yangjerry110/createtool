@@ -1,4 +1,4 @@
-module cmdtool
+module createtool
 
 go 1.16
 

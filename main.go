@@ -2,7 +2,7 @@
  * @Author: Jerry.Yang
  * @Date: 2022-09-07 14:20:30
  * @LastEditors: yangjie04@qutoutiao.net
- * @LastEditTime: 2022-09-19 19:02:35
+ * @LastEditTime: 2022-09-19 19:17:11
  * @Description: main
  */
 package main
@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"os"
 
-	"cmdtool/operate"
+	"createtool/operate"
 )
 
 func main() {
