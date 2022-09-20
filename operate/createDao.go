@@ -2,7 +2,7 @@
  * @Author: Jerry.Yang
  * @Date: 2022-09-13 18:47:16
  * @LastEditors: yangjie04@qutoutiao.net
- * @LastEditTime: 2022-09-20 10:43:30
+ * @LastEditTime: 2022-09-20 11:10:59
  * @Description: create dao
  */
 package operate
@@ -12,7 +12,7 @@ import (
 	"fmt"
 	"strings"
 
-	mytoolpkg "github.com/yangjerry110/mytool/pkg"
+	createPkg "github.com/yangjerry110/mytool/create/pkg"
 )
 
 type (
@@ -60,7 +60,7 @@ func (c *CreateDao) Action(operateParam string) {
 	 * @step
 	 * @创建dao
 	 **/
-	mytoolpkg.CreateDao(projectName, daoName, modelName, authorName)
+	createPkg.CreateDao(projectName, daoName, modelName, authorName)
 	return
 }
 

@@ -12,7 +12,7 @@ import (
 	"fmt"
 	"strings"
 
-	mytoolpkg "github.com/yangjerry110/mytool/pkg"
+	createPkg "github.com/yangjerry110/mytool/create/pkg"
 )
 
 type (
@@ -59,7 +59,7 @@ func (c *CreatedApp) Action(operateParam string) {
 	 * @step
 	 * @创建app
 	 **/
-	mytoolpkg.CreateApp(projectName, appName, method)
+	createPkg.CreateApp(projectName, appName, method)
 	return
 }
 
