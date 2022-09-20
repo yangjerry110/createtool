@@ -2,7 +2,7 @@
  * @Author: Jerry.Yang
  * @Date: 2022-09-13 18:47:16
  * @LastEditors: yangjie04@qutoutiao.net
- * @LastEditTime: 2022-09-19 19:06:51
+ * @LastEditTime: 2022-09-20 10:43:30
  * @Description: create dao
  */
 package operate
@@ -41,16 +41,20 @@ func (c *CreateDao) Action(operateParam string) {
 
 	/**
 	 * @step
+	 * @获取authorName
+	 **/
+	if len(appParams) == 3 {
+		appParams = append(appParams, "Jerry.Yang")
+	}
+
+	/**
+	 * @step
 	 * @定义参数
 	 **/
 	projectName := appParams[0]
 	daoName := appParams[1]
 	modelName := appParams[2]
 	authorName := appParams[3]
-
-	if authorName == "" {
-		authorName = "Jerry.Yang"
-	}
 
 	/**
 	 * @step
